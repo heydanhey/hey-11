@@ -1,0 +1,60 @@
+@import "@webpixels/css/base";
+@import "@webpixels/css/forms";
+@import "@webpixels/css/components";
+@import "@webpixels/css/utilities";
+
+.badge {
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 5px;
+
+  a {
+    color: var(--x-teal-600)
+  }
+
+  a:hover {
+    color: var(--x-teal-400)
+  }
+
+  li {
+
+    margin-top: 5px;
+
+    a {
+      color: #5C60F5;
+    }
+
+    a:hover {
+      color: #5C60F5;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  .caret {
+    padding-left: 5px;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+
+  [data-bs-toggle="collapse"][aria-expanded="true"] {
+    .caret {
+      transition: transform 0.3s ease-in-out;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+ul {
+  padding-left: 0 !important;
+}
+
+li {
+  list-style-type: none;
+  padding-top: 5px;
+}

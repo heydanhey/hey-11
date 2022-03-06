@@ -1,0 +1,96 @@
+---
+layout: base
+title: Hey
+permalink: '/'
+heading: Hey, Dan Hey
+---
+
+<div class="container-xxl">
+  <div class="col-md-9 px-3 mx-auto">
+
+    <!-- Top Heading -->
+    <section class="text-center mt-20 mb-8">
+      <h1 class="display-3 ls-tight">
+        <span class="d-inline-flex text-transparent bg-clip-text gradient-bottom-right start-green-500 end-indigo-400 position-relative">Hey.</span> I'm Dan. 
+      </h1>
+      <p class="text-lg font-semibold mt-5 px-lg-32 my-4 red">
+        I make <span style="color: cornflowerblue;">art</span> and <span style="color: var(--x-teal-600);">software</span> for the web.
+      </p>
+      <div class="d-flex align-items-center">
+        <hr class="flex-fill green-500"/>
+        <div class="mx-3">
+          <a href="https://github.com/heydanhey" target="blank" class="p-2">
+            <i class="bi bi-github" style="font-size: 1.5rem;" aria-label="Github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/heydan/" target="blank" class="p-2">
+            <i class="bi bi-linkedin" style="font-size: 1.5rem;" aria-label="Linkedin"></i>
+          </a>
+          <a href="https://www.flickr.com/photos/heyelevator" target="blank" class="p-2">
+            <i class="bi bi-camera" style="font-size: 1.5rem;" aria-label="Flickr"></i>
+          </a>
+        </div>
+        <hr class="flex-fill green-500"/>
+      </div>
+    </section>
+
+    <!-- About Summary -->
+    <section class="row g-6 g-lg-6 pb-8">
+      <p class="text-md font-semibold text-start mt-4">
+        I have a strong creative background and a passion for learning.
+        I'm currently working as a software engineer at Groupon.
+        Previously, I've built applications to help attorneys, and software to help monitor real-time traffic.
+        In my free time, I metor young develpers that are just getting started on their careers.
+      </p>
+    </section>
+
+    <!-- Presonal Projects -->
+    <section class="row g-6 g-lg-6">
+
+      <h2 class="d-flex align-items-center text-transparent bg-clip-text gradient-bottom-right start-green-500 end-indigo-400 ">
+        <hr class="flex-fill green-500"/>
+        <span class="mx-3">Projects</span>
+        <hr class="flex-fill green-500"/>
+      </h2>
+
+      <!-- Asteroid -->
+      {% include "partials/projects/asteroids.njk" %}
+
+      <!-- Rabbits -->
+      {% include "partials/projects/rabbits.njk" %}
+
+      <!-- Favorite Reptile -->
+      {% include "partials/projects/favorite-reptile.njk" %}
+
+      <!-- Free Hot Tub -->
+      {% include "partials/projects/free-hot-tub.njk" %}
+
+      <!-- Wefreshed -->
+      {% include "partials/projects/lunr.njk" %}
+
+      <!-- Wefreshed -->
+      {% include "partials/projects/wefreshed.njk" %}
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="moon-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h5 class="modal-title" id="modal-label">Dark mode coming soon!</h5>
+          <small>Until then, enjoy this poem about the moon.</small>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <figure id="moon-quote">
+          <blockquote></blockquote>
+          <figcaption class="modal-footer"></figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
