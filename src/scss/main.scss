@@ -61,3 +61,8 @@ li {
 .h-100 {
   height: 100%;
 }
+
+a:focus-visible {
+  outline: 2px solid #FF8C00;
+  border-radius: 3px;
+}
