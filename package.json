@@ -12,7 +12,7 @@
     "watch:js": "parcel watch ./src/js/main.js --dist-dir ./dist/js",
     "watch:images": "parcel watch ./src/img/*",
     "build": "run-s clean build:parcel build:eleventy",
-    "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy --pathprefix 'hey-11'",
+    "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
     "build:parcel": "run-p build:css build:js build:images",
     "build:css": "parcel build ./src/scss/main.scss --dist-dir ./dist/css",
     "build:js": "parcel build ./src/js/main.js --dist-dir ./dist/js",
