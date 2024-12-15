@@ -24,6 +24,7 @@ function eleventyConfig(config) {
   // html min only in production
   if (isProduction) {
     config.addTransform("htmlmin", htmlMinify);
+    config.addTransform("pathPrefix", "hey-11")
   }
 
   // Configuration
