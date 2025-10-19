@@ -9,28 +9,44 @@
         </header>
         <p class="text-muted mb-5">
           Need a hot tub? Don't have any cash? Use this app to help pair you with a free jacuzzi.
-          This is a small Rails application which uses a rake tasks, a scheduler and nokogiri to scrape Craigslist for any available free hot tubs.
-          It uses Postgres to store the listings, but also flags them as inactive when the listings are removed.
+          <s>This is a small Rails application which uses a rake tasks, a scheduler and nokogiri to scrape Craigslist for any available free hot tubs.</s>
+        </p>
+        <p class="text-muted mb-5">
+          Since Heroku eliminated their free plan, I had to migrate this to AWS.
+          It now uses a scheduled lambda to scan for the listings and wirtes to DynamoDB.
+          An additional lambda provides the data through an API gateway.
         </p>
         <hr class="flex-fill green-500"/>
-        <span class="badge bg-danger">Ruby on Rails</span>
-        <span class="badge bg-secondary">Heroku</span>
+        <span class="badge bg-secondary"><s>Ruby on Rails</s></span>
+        <span class="badge bg-secondary"><s>Heroku</s></span>
+        <span class="badge bg-danger">AWS Lambda</span>
+        <span class="badge bg-primary">Serverless</span>
         <footer>
           <ul id="collapse-free-hot-tub">
             <li>
               <a href="http://free-hot-tubs.heydanhey.com/" target="blank">
-                <i class="bi bi-box-arrow-in-up-right"></i> Demo
+                <i class="bi bi-box-arrow-in-up-right"></i> Site
               </a>
             </li>
             <li>
-              <a href="https://github.com/heydanhey/freeHotTub" target="blank">
-                <i class="bi bi-github"></i> Repo
-              </a>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="https://github.com/heydanhey/freeHotTub" target="blank">
+                  <s><i class="bi bi-github"></i> Repo</s>
+                </a>
+                <a href="https://github.com/heydanhey/craigslist-scraper-lambda" target="blank">
+                  <i class="bi bi-github"></i> Repo
+                </a>
+              </div>
             </li>
             <li>
-              <a href="https://github.com/heydanhey/freeHotTub/blob/0eac0e8f639a8be692cface5bf7f9e5832e27db4/lib/tasks/free_hot_tubs.rake#L1-L58" target="blank">
-                <i class="bi bi-joystick"></i> Rake Task
-              </a>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="https://github.com/heydanhey/freeHotTub/blob/0eac0e8f639a8be692cface5bf7f9e5832e27db4/lib/tasks/free_hot_tubs.rake#L1-L58" target="blank">
+                  <s><i class="bi bi-joystick"></i> Rake Task</s>
+                </a>
+                <a href="https://github.com/heydanhey/craigslist-scraper-lambda" target="blank">
+                  <i class="bi bi-joystick"></i> Lambda
+                </a>
+              </div>
             </li>
           </ul>
         </footer>
