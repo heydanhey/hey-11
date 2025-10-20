@@ -25,7 +25,7 @@ function eleventyConfig(config) {
   if (isProduction) {
     config.addTransform("htmlmin", htmlMinify);
   }
-  
+
   // Configuration
   return {
     dir: {
@@ -37,6 +37,7 @@ function eleventyConfig(config) {
     templateFormats: ["html", "njk", "md", "11ty.js"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
+    pathPrefix: process.env.ELEVENTY_ENV === "production" ? "/hey-11/" : "/",
   };
 }
 
